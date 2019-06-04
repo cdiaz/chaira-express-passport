@@ -1,0 +1,34 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+
+<head>
+  <title>Passport-Chairá</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <style>
+    body {
+      padding-top: 80px;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="span3 well">
+      <center>
+        <img src="<%= user.picture %>" name="aboutme" width="120" height="140" class="img-circle">
+        <h3><%= user.displayName%></h3>
+        <strong>Id</strong>: <%= user.id%><br>
+        <strong>Rol</strong>:<br>
+        <strong>Email</strong>: <%= user.email%><br>
+        <strong>Gender</strong>: <%= user.gender%><br>
+        <strong>Age</strong>: <%= user.age%><br>
+      </center>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
