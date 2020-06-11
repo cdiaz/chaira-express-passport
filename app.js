@@ -24,7 +24,7 @@ passport.use(
   new Strategy({
     clientID: process.env.CHAIRA_CLIENT_ID,
     clientSecret: process.env.CHAIRA_CLIENT_SECRET,
-    callbackURL: "http://127.0.0.1:8080/auth/chaira/callback",
+    callbackURL: process.env.CHAIRA_CALLBACK_URL,
     state: true
   },
     (accessToken, refreshToken, profile, done) => {
