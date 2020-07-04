@@ -20,11 +20,14 @@
       <center>
         <img src="<%= user.picture %>" name="aboutme" width="120" height="140" class="img-circle">
         <h3><%= user.displayName%></h3>
-        <strong>Id</strong>: <%= user.id%><br>
-        <strong>Rol</strong>:<br>
+        <strong>Id</strong>: <%= user.userId%><br>
+        <strong>Rol</strong>:<%= user.role%><br>
         <strong>Email</strong>: <%= user.email%><br>
         <strong>Gender</strong>: <%= user.gender%><br>
         <strong>Age</strong>: <%= user.age%><br>
+        <strong>Identification</strong>: <%= user.id%><br>
+        <strong>Issuing City</strong>: <%= user.issuingCity%><br>
+
       </center>
     </div>
   </div>
